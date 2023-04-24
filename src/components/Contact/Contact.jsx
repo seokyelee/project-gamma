@@ -1,13 +1,13 @@
 import './Contact.css';
 
 function Contact(props) {
-    return <div>
+    return <div className="contact">
         <div>
-            <img src="http://placekitten.com/200/300" alt="contacto"/>
+            <img className="contact__img" src={ props.img } alt="contacto"/>
         </div>
         <div>
-            <strong>{props.name}</strong>
-            <p className="contact-text">{props.icon}</p>
+            <strong>{ props.name }</strong>
+            <p className="contact__text"> { props.icon }</p>
         </div>
     </div>
 }
